@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,minimal-ui" />
+    <title></title>
+
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js" type="text/javascript"></script>
+    <script src="js/zepto.min.js" type="text/javascript"></script>
+    <script src="js/toucher.js" type="text/javascript"></script>
+
+    <script src="js/animation.js" type="text/javascript"></script>
+    <script src="js/index.js" type="text/javascript"></script>
+</head>
+<body class="main">
+<img id="j-wximg" src="http://www.subaoming.cn/zhilian/h5/images/common/wxshare.jpg" width="0" height="0" style="position: absolute;z-index: -1;">
+
+<div class="logo none"><img src="images/common/logo.png" alt="" /></div>
+
+
+<!--index-->
+<div class="index none">
+    <div class="txt1 "><img src="images/index/txt1.png" alt="2015中国年度最佳雇主" /></div>
+    <div class="txt2">
+        <img src="images/index/txt2-top.png" alt="构建中国新雇主经济主义" /><img class="ani-txt2" src="images/index/txt2-top.png" alt="" /><img class="ani-txt3" src="images/index/txt2-top.png" alt="" />
+    </div>
+    <div class="scan">
+        <div class="scanlight"></div>
+        <div class="finger"></div>
+    </div>
+    <p class="btn"><img src="images/index/btn.png" alt="验证开启" /></p>
+</div>
+
+<!--page1-->
+<div class="page1 none">
+    <button class="companyLink">企业报名</button>
+    <button class="personalLink">个人提名</button>
+</div>
+
+<!--page2-->
+<div class="page2 none">
+    <div class="best-award">
+        <p class="award-title">中国年度最佳雇主</p>
+
+        <p class="award-txt">
+            由智联招聘联合北京大学企业社会责任与雇主品牌传播中心共同发起，褒奖杰出雇主品牌的标杆企业，促使企业更加深入地推进雇主品牌建设。以榜样推动中国企业制定并实施雇主品牌战略，助力企业更好的应对人力资源市场的发展变化。让求职者了解什么是真正的“好工作”、“好雇主”，为企业制定雇主品牌战略提供数据支持，以实现雇主与雇员的“双赢”。</p>
+    </div>
+</div>
+<!-- page2plus-->
+<div class="page2plus none">
+    <div class="page2plus-old">
+        <h2 class="page2plus-old-title">雇主经济主义</h2>
+        <ul class="page2plus-old-box">
+            <li class="page2plus-old1">招聘</li>
+            <li class="page2plus-old2">培训</li>
+            <li class="page2plus-old3">薪酬</li>
+            <li class="page2plus-old4">绩效</li>
+        </ul>
+    </div>
+    <div class="page2plus-arr"></div>
+    <div class="page2plus-new">
+        <h2 class="page2plus-new-title">新雇主经济主义</h2>
+        <ul class="page2plus-new-box">
+            <li class="page2plus-new1">诉求</li>
+            <li class="page2plus-new2">情感</li>
+            <li class="page2plus-new3">意识</li>
+            <li class="page2plus-new4">行为</li>
+            <li class="page2plus-new5">组织</li>
+        </ul>
+    </div>
+</div>
+<!--page3-->
+<div class="page3 none">
+    <div class="organizers">
+        <p class="org-title1">联合主办</p>
+
+        <p class="org-txt1">北京大学社会调查中心 智联招聘</p>
+
+        <p class="org-title2">学术支持机构</p>
+
+        <p class="org-txt2">北京大学社会调查研究中心</p>
+
+        <p class="org-title3">专业职称媒体</p>
+
+        <p class="org-txt3">《CHO首席人才官》</p>
+
+        <p class="org-title4">行业圈子支持</p>
+
+        <p class="org-txt4">HR公会（微信号：clubhr）</p>
+    </div>
+</div>
+<!--page4-->
+<div class="page4 none">
+    <div class="looking-for">
+        <div class="looking-title">经历十年权威评审我们正在寻找</div>
+        <div class="looking-txt1">2015年度最佳雇主TOP30强</div>
+        <div class="looking-txt2">2015年度最佳雇主百强</div>
+        <div class="looking-txt3">2015最受大学生关注雇主</div>
+        <div class="looking-txt4">2015最受女性关注雇主</div>
+        <div class="looking-txt5">2015最佳雇主卓越成就奖</div>
+        <div class="looking-txt6">2015年度最具社会责任雇主</div>
+        <div class="looking-txt7">2015年度最佳中小企业雇主</div>
+    </div>
+    <button class="looking-btn">我要报名</button>
+</div>
+
+<!--page5-->
+
+<div class="page5 none">
+    <div class="zan-board">
+        <p>
+            <mark id="j-company-name"></mark>
+        </p>
+        <p>已参加</p>
+
+        <p><span>2015最佳雇主评选</span></p>
+    </div>
+
+    <button class="zan-btn">为他点赞</button>
+    <button class="charts-btn">排行榜</button>
+
+    <div class="zan-info"> #为企业点赞上头条#
+        至报名截止日，获得点赞数最高的TOP3企业，
+        将获得智联招聘免费送出的绝佳福利
+        zhaopin.com首页绝佳广告位使用权！
+    </div>
+    <button class="zan-goback">返回首页</button>
+</div>
+
+<!--page6-->
+<div class="page6 none">
+    <div class="chartsMine" id="j-chartsMine">
+        <h2></h2>
+        <p><span>已获得</span><mark></mark><i></i></p>
+    </div>
+    <div class="chartsBox">
+        <h2 class="chartsTitle">企业点赞排行榜</h2>
+        <ol class="chartsList"></ol>
+    </div>
+    <p class="chartsArr"></p>
+    <button class="charts-goback">返回首页</button>
+</div>
+
+<!--page7-->
+<div class="page7 none">
+    <div class="personal-invite">
+        <div class="personal-invite-txt">您的好友已为2015年度最佳雇主提名</div>
+        <div class="personal-invite-icon"></div>
+    </div>
+    <button class="personal-invite-btn">查看排行榜</button>
+    <button class="personal-invite-goback">返回首页</button>
+</div>
+
+
+<!--page8-->
+<div class="page8 none">
+    <div id="tagsList" class="tagsList">
+        <span><a>公司健身房</a></span>
+        <span><a>季度奖金</a></span>
+        <span><a class="bigerFont">一年17薪</a></span>
+        <span><a>美女领导</a></span>
+        <span><a>郁闷假</a></span>
+        <span><a class="bigerFont">打车报销</a></span>
+        <span><a>全球轮岗</a></span>
+        <span><a class="bigerFont">超长带薪年假</a></span>
+        <span><a class="bigerFont">姨妈假</a></span>
+        <span><a>宠物同事</a></span>
+        <span><a>在家办公</a></span>
+        <span><a class="bigerFont">股权期权</a></span>
+        <span><a>团体旅游</a></span>
+        <span><a class="bigerFont">高大上办公环境</a></span>
+        <span><a>免费体验</a></span>
+        <span><a>食堂大餐</a></span>
+        <span><a>免费班车</a></span>
+        <span><a>无敌下午茶</a></span>
+        <span><a>高温补贴</a></span>
+        <span><a>年会大奖</a></span>
+    </div>
+</div>
+
+<!--page9-->
+
+<div class="page9 none">
+
+    <div class="personal zoomOut">
+        <p class="personal-who fadeOut">谁</p>
+
+        <p class="personal-word fadeOut">是你心中的最佳雇主</p>
+        <i class="personal-icon fadeOut">？</i>
+    </div>
+    <div class="personal-btn zoomOut">我要提名</div>
+    <div class="personal-info zoomOut">提名有奖
+        Kindle阅读器 手机充值卡
+        等你来拿！
+    </div>
+</div>
+
+
+<!--page10-->
+<div class="page10 none">
+    <div class="invite">
+        <div class="invite-txt">我已为2015年度最佳雇主提名</div>
+        <div class="invite-icon"></div>
+    </div>
+    <button class="invite-btn">邀请好友提名</button>
+    <button class="invite-goback">返回首页</button>
+</div>
+
+
+<!--<div class="swiper-container">
+    <div class="swiper-wrapper"></div>
+</div>-->
+
+
+<div id="mask" class="mask"></div>
+<!--<div class="pagaBtn none"></div>-->
+<div class="music on"></div>
+<audio id="audio" class="audio" autoplay loop src=""></audio>
+<!--<audio id="audio" class="audio" autoplay loop  src="res/bg.mp3"></audio>-->
+<dl class="pagaBtn"><dt></dt><dd></dd><dd></dd><dd></dd></dl>
+<!--<div style="height:1px; visibility:hidden; overflow:hidden;"><script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?11375339f6c24d66ccccd7a86f0c3ae1";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script></div>-->
+</body>
+</html>
